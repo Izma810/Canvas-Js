@@ -75,3 +75,6 @@ function clearCanvas(){
     {once:true}
     );
 }
+//listen for arrow keys
+window.addEventListener("keydown",handleKey);
+shakeButton.addEventListener("click",clearCanvas);
