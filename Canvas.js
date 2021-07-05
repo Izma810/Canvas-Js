@@ -26,33 +26,33 @@ ctx.lineTo(x,y);
 ctx.stroke();
 
 //write a draw function
-function draw({key}){
+function draw({ key }) {
     //increment the hue
-    hue=hue+10;
+    hue = hue + 10;
     ctx.strokeStyle = `hsl(${hue},100%,50%)`;
     console.log(key);
     //start the path
     ctx.beginPath();
-    ctx.moveTo(x,y);
+    ctx.moveTo(x, y);
     //move our x and y values depending on what the user did
-    switch(key){
+    switch (key) {
         case "ArrowUp":
-            y=y-NOVE_AMOUNT;
+            y = y - NOVE_AMOUNT;
             break;
         case "ArrowRight":
-             x=x+NOVE_AMOUNT;
+            x = x + NOVE_AMOUNT;
             break;
         case "ArrowDown":
-            y=y+NOVE_AMOUNT;
+            y = y + NOVE_AMOUNT;
             break;
         case "ArrowLeft":
-            x=x-NOVE_AMOUNT;
+            x = x - NOVE_AMOUNT;
             break;
         default:
             break;
         
     }
-    ctx.lineTo(x,y);
+    ctx.lineTo(x, y);
     ctx.stroke();
 }
 

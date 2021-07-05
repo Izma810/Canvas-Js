@@ -15,7 +15,8 @@ canvas{
     height:500px;
     background:white;
 }
-.buttons .shake{
+
+canvas.shake{
     animation:shake 0.5s linear 1;
     margin-top: 10px;
     position:relative;
